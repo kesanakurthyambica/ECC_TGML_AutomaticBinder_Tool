@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TGML Binder Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Binding Tool</h1>
+        <p>Upload TGML & Excel File to Update Bindings</p>
+        <form method="post" enctype="multipart/form-data">
+            <label for="tgml_file">TGML File</label>
+            <input type="file" name="tgml_file" id="tgml file" required>
+
+            <label for="excel_file">Excel File:</label>  
+            <input type="file" name="excel_file" id="excel_file" required>
+
+            <label for="sheet_name">Sheet Name:</label>
+            <input type="text" name="sheet_name" id="sheet_name" required><br><br>
+
+            <input type="submit" value="Submit and Download">
+    </form>
+</body>
+</html>
